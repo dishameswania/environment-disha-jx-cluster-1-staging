@@ -6,6 +6,13 @@ resources:
       buildName: mvn_example_build
       buildNumber: 1
       
+  - name: build_info_new
+    type: BuildInfo
+    configuration:
+    sourceArtifactory: artdisha
+      buildName: mvn_example_build
+      buildNumber: 1
+      
   - name: project_example
     type: GitRepo
     configuration:
@@ -47,9 +54,11 @@ pipelines:
       - name: promote
         type: PromoteBuild
         configuration:
-          targetRepo: libs-promoted-local
+          targetRepository: libs-promoted-local
           includeDependencies: true
           inputSteps:
             - name: publish
           inputResources:
             - name: build_info
+          outputResources:
+            - name: build_info_new
