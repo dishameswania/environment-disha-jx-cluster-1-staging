@@ -11,6 +11,12 @@ resources:
       sourceArtifactory: artdisha
       buildName: mvn_example_build
       buildNumber: 1
+  - name: build_info_scanned
+    type: BuildInfo
+    configuration:
+      sourceArtifactory: artdisha
+      buildName: mvn_example_build
+      buildNumber: 1
   - name: project_example
     type: GitRepo
     configuration:
@@ -66,4 +72,4 @@ pipelines:
           inputResources:
             - name: build_info_new
           outputResources:
-            - name: build_info_new
+            - name: build_info_scanned
