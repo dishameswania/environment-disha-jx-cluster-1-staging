@@ -73,3 +73,10 @@ pipelines:
             - name: build_info_new
           outputResources:
             - name: build_info_scanned
+            
+          execution:
+            onFailure: 
+              - echo "Vulnerabilities found - please take a look at your watch violations in Xray"
+            onSuccess:
+              - echo "No vulnerabilities - good to proceed"
+            
