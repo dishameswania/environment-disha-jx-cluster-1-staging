@@ -74,9 +74,9 @@ pipelines:
           outputResources:
             - name: build_info_scanned
             
-          execution:
-            onFailure: 
-              - echo "Vulnerabilities found - please take a look at your watch violations in Xray"
-            onSuccess:
-              - echo "No vulnerabilities - good to proceed"
+        execution:
+          onFailure: 
+            - echo "Vulnerabilities found - please take a look at your watch violations in Xray"
+          onSuccess:
+            - echo "No vulnerabilities - good to proceed"
             
