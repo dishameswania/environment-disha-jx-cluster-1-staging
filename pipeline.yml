@@ -60,3 +60,10 @@ pipelines:
             - name: build_info
           outputResources:
             - name: build_info_new
+      - name: xray
+        type: XrayScan
+        configuration:
+          inputResources:
+            - name: build_info_new
+          outputResources:
+            - name: build_info_new
