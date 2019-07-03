@@ -9,7 +9,7 @@ resources:
     type: BuildInfo
     configuration:
     sourceArtifactory: artdisha
-      buildName: mvn_example_build
+      buildName: mvn_example_build_promote
       buildNumber: 1      
   - name: project_example
     type: GitRepo
