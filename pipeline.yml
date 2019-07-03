@@ -44,3 +44,12 @@ pipelines:
             - name: build_mvn
           outputResources:
             - name: build_info
+      - name: promote
+        type: PromoteBuild
+        configuration:
+          targetRepo: libs-promoted-local
+          includeDependencies: true
+          inputSteps:
+            - name: publish
+          inputResources:
+            - name: build_info
