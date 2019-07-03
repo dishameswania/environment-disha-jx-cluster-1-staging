@@ -4,15 +4,13 @@ resources:
     configuration:
       sourceArtifactory: artdisha
       buildName: mvn_example_build
-      buildNumber: 1
-      
+      buildNumber: 1      
   - name: build_info_new
     type: BuildInfo
     configuration:
     sourceArtifactory: artdisha
       buildName: mvn_example_build
-      buildNumber: 1
-      
+      buildNumber: 1      
   - name: project_example
     type: GitRepo
     configuration:
