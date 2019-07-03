@@ -10,7 +10,7 @@ resources:
     type: GitRepo
     configuration:
       gitProvider:  github-disha
-      path: github-disha/project-examples
+      path: dishameswania/project-examples
  
 pipelines:
   - name: mvn_example_build
