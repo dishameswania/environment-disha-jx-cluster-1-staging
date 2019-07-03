@@ -5,12 +5,6 @@ resources:
       sourceArtifactory: artdisha
       buildName: mvn_example_build
       buildNumber: 1      
-  - name: build_info_new
-    type: BuildInfo
-    configuration:
-    sourceArtifactory: artdisha
-      buildName: mvn_example_build_promote
-      buildNumber: 1      
   - name: project_example
     type: GitRepo
     configuration:
@@ -58,5 +52,4 @@ pipelines:
             - name: publish
           inputResources:
             - name: build_info
-          outputResources:
-            - name: build_info_new
+         
