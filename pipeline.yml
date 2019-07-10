@@ -71,8 +71,6 @@ pipelines:
         configuration:
           inputResources:
             - name: build_info_new
-          outputResources:
-            - name: build_info_scanned
             
         execution:
           onFailure: 
